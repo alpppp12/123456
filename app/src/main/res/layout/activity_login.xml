@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#ededed"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:background="#fff"
+        app:cardElevation="10dp"
+        android:elevation="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/blood_icon"
+                android:contentDescription="@string/todo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:text="Авторизация"
+                android:textColor="#3a4359"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+
+                    <EditText
+                        android:id="@+id/loginEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="10dp"
+                        android:hint="Введите эл.почту"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                    <EditText
+                        android:id="@+id/loginPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawablePadding="10dp"
+                        android:hint="Введите пароль"
+                        android:inputType="textPassword"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:text="Войти"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3a4359"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttons_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/forgotPassword"
+                    android:text="Забыли пароль?"
+                    android:textColor="#000"
+                    android:gravity="end"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/backButton"
+                    android:text="Зарегистрироваться"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#8a8b94"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

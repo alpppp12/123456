@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">DonorApp</string>
+    <string name="title">Donor App</string>
+    <string name="todo">TODO</string>
+
+    <string name="navigation_drawer_open">Открыть панель навигации</string>
+    <string name="navigation_drawer_close">Закрыть панель навигации</string>
+
+    <string-array name="bloodgroups">
+        <item>Выберите свою группу крови</item>
+        <item>I(0)+</item>
+        <item>I(0)-</item>
+        <item>II(A)+</item>
+        <item>II(A)-</item>
+        <item>III(B)+</item>
+        <item>III(B)-</item>
+        <item>IV(AB)+</item>
+        <item>IV(AB)-</item>
+
+    </string-array>
+
+
+</resources>

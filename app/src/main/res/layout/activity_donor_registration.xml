@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#f5f5f5"
+    tools:context=".DonorRegistrationActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="5dp"
+        android:background="#fff"
+        app:cardElevation="10dp"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/blood_icon"
+                android:contentDescription="@string/todo"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:text="Регистрация"
+                android:textColor="#3a4359"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/profile_image"
+                    app:civ_border_width="2dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="center"
+                    app:civ_border_color="#FF000000"
+                    tools:ignore="MissingClass" />
+
+                    <EditText
+                        android:id="@+id/registerPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:drawablePadding="10dp"
+                        android:hint="Номер телефона"
+                        android:inputType="number"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/registerIdNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_person"
+                        android:drawablePadding="10dp"
+                        android:hint="Город"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+                    <EditText
+                        android:id="@+id/registerFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_person"
+                        android:drawablePadding="10dp"
+                        android:hint="Имя Фамилия"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                <Spinner
+                    android:id="@+id/bloodGroupsSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#fff"
+                    android:entries="@array/bloodgroups"
+                    android:gravity="center"
+                    android:minHeight="48dp" />
+
+
+                    <EditText
+                        android:id="@+id/registerEmailr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="10dp"
+                        android:hint="Введите эл.почту"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                    <EditText
+                        android:id="@+id/registerPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawablePadding="10dp"
+                        android:hint="Введите пароль"
+                        android:inputType="textPassword"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="18sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/registerButton"
+                    android:text="Зарегистрироваться"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3a4359"
+                    android:textSize="25sp"
+                    android:background="@drawable/buttons_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/backButton"
+                    android:text="Есть учетная запись? Войти"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#8a8b94"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
