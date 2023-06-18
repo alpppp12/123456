@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "424573429511",
+    "project_id": "appdonor-45d02",
+    "storage_bucket": "appdonor-45d02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424573429511:android:8bf266ebf78aadbeabc7a2",
+        "android_client_info": {
+          "package_name": "com.repalova.donorapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424573429511-3o6tpbbspkmh6di1qo5pv38oglqtkv4s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.repalova.donorapplication",
+            "certificate_hash": "93c7ce7b35c95d44ff530d9483f4167321272854"
+          }
+        },
+        {
+          "client_id": "424573429511-88tngem5v2opibrsctjmotk92tjnqd9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwMgZQ3SzZtinDj1Z1InEPlUVpCawIsec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424573429511-88tngem5v2opibrsctjmotk92tjnqd9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
